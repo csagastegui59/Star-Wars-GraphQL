@@ -4,3 +4,5 @@ const colors = {
   TextLight: "#828282",
   TextEmphasis: "#EC5757"
 }
+
+export default colors
