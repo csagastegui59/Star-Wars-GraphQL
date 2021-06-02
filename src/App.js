@@ -10,7 +10,6 @@ function App() {
         <H2White>Ravn Star Wars Registry</H2White>
       </Header>
       <Characters></Characters>
-     <p>My app</p>
     </div>
   );
 }
