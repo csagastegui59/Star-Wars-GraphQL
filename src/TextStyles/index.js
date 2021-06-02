@@ -4,13 +4,11 @@ import colors from '../constant/colors.js';
 const H2 = styled.h2`
   font-weight: 700;
   font-size: 17px;
-  line-height: 20.29px;
   letter-spacing: 1.25%;
 `
 const P = styled.p`
   font-weight: 400;
   font-size: 14;
-  line-height: 16.71;
   letter-spacing: 1.25%;
 `
 
