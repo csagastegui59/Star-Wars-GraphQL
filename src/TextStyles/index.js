@@ -1,5 +1,5 @@
-import styled from "@emotion/styled";
-import colors from "../constant/color"
+import styled from '@emotion/styled';
+import colors from '../constant/colors.js';
 
 const H2 = styled.h2`
   font-weight: 700;
@@ -23,7 +23,7 @@ const H2White = styled(H2)`
 const H2LowEmphasis = styled(H2)`
   color: ${colors.TextLight};
 `;
-const H2HighEmphasis = styled.h2`
+const H2HighEmphasis = styled(H2)`
   color: ${colors.TextEmphasis} ;
 `;
 const P1Default = styled(P)`
