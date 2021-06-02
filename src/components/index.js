@@ -22,7 +22,8 @@ margin: 16px 16px 16px 16px;
 `
 const DataCell = styled.div`
 display: flex;
-padding: 16px 16px 16px 16px;
+flex-direction: column;
+padding: 32px 116px 16px 116px;
 gap: 16px;
 `
 
@@ -39,6 +40,18 @@ flex-direction: row;
 justify-content: space-between;
 padding: 16px 24px 16px 15px;
 `
+const CharactersWrapper = styled.div`
+display: flex;
+flex-direction: row;
+`
 
-
-export { SectionHeader, NoticeCell, LoadingCell, PersonCell, DataCell, Header, Card}
+const InfoWrapper = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+width: 890px;
+padding: 14px 0px 15px 0px;
+margin-bottom: 29px;
+`
+export { SectionHeader, NoticeCell, LoadingCell, PersonCell, DataCell, Header, Card, CharactersWrapper, InfoWrapper}
