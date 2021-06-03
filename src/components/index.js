@@ -43,6 +43,16 @@ padding: 16px 24px 16px 15px;
 const CharactersWrapper = styled.div`
 display: flex;
 flex-direction: row;
+border-right: solid 1px rgba(0, 0, 0, 0.1);
+`
+
+const LoadingWrapper = styled.div`
+display: flex;
+flex-direction: row;
+justify-content: center;
+height: 100vh;
+width: 390px;
+border-right: solid 1px rgba(0, 0, 0, 0.1);
 `
 
 const InfoWrapper = styled.div`
@@ -54,4 +64,27 @@ width: 890px;
 padding: 14px 0px 15px 0px;
 margin-bottom: 29px;
 `
-export { SectionHeader, NoticeCell, LoadingCell, PersonCell, DataCell, Header, Card, CharactersWrapper, InfoWrapper}
+const Icon = styled.div`
+  height: 20px;
+  width: 20px;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+`
+
+const Sticky = styled.div`
+  overflow: scroll;
+  height: calc(100vh - 54px) ;
+  overflow-x: hidden;
+`
+
+export { SectionHeader, NoticeCell, LoadingCell, PersonCell, DataCell, Header, Card, CharactersWrapper, InfoWrapper, Icon, LoadingWrapper, Sticky}
