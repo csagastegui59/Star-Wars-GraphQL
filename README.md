@@ -23,7 +23,7 @@ Requirements
     React
     Apollo Client
     GraphiQL
-    NodeJS
+    NodeJS v15.13.0
 
 Get started
 
