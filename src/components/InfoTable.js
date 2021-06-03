@@ -1,7 +1,9 @@
 import React from "react";
 import { gql, useQuery } from "@apollo/client";
-import { SectionHeader, NoticeCell, LoadingCell, PersonCell, DataCell, Header, Card, Wrapper, InfoWrapper} from '../components/index.js';
-import { H2Default, H2LowEmphasis } from "../TextStyles/index.js";
+import { Icon, LoadingCell, DataCell, InfoWrapper, NoticeCell} from '../components/index.js';
+import { H2Default, H2LowEmphasis, H2HighEmphasis } from "../TextStyles/index.js";
+import Spinner from '../assets/images/spinner.svg';
+
 const GET_INFO = gql`
   query info($id:ID!){
     person(id: $id) {
@@ -25,8 +27,23 @@ const capitalize = (s) => {
 
 export default function InfoTable({id}) {
   const { loading, error, data } = useQuery(GET_INFO, {variables: {id}});
-  if (loading) return "Loading";
-  if (error) return `Error! ${error.message}`;
+  if (loading) return (
+    <LoadingCell>
+      <Icon>
+        <img src={Spinner} alt="loadingIcon"/>
+      </Icon>
+      <H2LowEmphasis>Loading</H2LowEmphasis>
+    </LoadingCell>
+  );
+
+  if (error) return (
+    <NoticeCell>
+      <H2HighEmphasis>
+        Failed to load data
+      </H2HighEmphasis>
+    </NoticeCell>
+    );
+
   return (
     <div>
       <DataCell>

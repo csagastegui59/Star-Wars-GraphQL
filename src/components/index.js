@@ -44,6 +44,7 @@ const CharactersWrapper = styled.div`
 display: flex;
 flex-direction: row;
 border-right: solid 1px rgba(0, 0, 0, 0.1);
+padding-left: 20px;
 `
 
 const LoadingWrapper = styled.div`
