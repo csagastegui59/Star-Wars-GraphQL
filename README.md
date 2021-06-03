@@ -8,7 +8,7 @@ You can click any card and its information will be shown on the right side.
 
 ![Screenshot from 2021-06-02 23-59-31](https://user-images.githubusercontent.com/45051315/120589556-a6a6f080-c3fe-11eb-92ed-708019ae2eaf.png)
 
-Whenever an error occurs an error message will be drop as follow:
+Whenever an error occurs an error message will be drop as follows:
 
 ![Screenshot from 2021-06-02 23-51-39](https://user-images.githubusercontent.com/45051315/120589355-562f9300-c3fe-11eb-9301-da8656fcf3a5.png)
 
