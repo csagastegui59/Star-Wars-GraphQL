@@ -1,6 +1,6 @@
 Star Wars Registry
 
-Development
+This is a web application developed with react.
 
 Requirements
 
@@ -14,9 +14,6 @@ Get started
     Clone the repo
     Run npm install 
     Run npm start to start the server
-
-
-This is a web application developed with react.
 
 The application starts by loading data on the left side 5 by 5. 
 
