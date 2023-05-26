@@ -41,10 +41,14 @@ justify-content: space-between;
 padding: 16px 24px 16px 15px;
 `
 const CharactersWrapper = styled.div`
+
 display: flex;
 flex-direction: row;
 border-right: solid 1px rgba(0, 0, 0, 0.1);
 padding-left: 20px;
+&:hover {
+  cursor: pointer;
+}
 `
 
 const LoadingWrapper = styled.div`
