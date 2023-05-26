@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Header>
-        <H2White>Ravn Star Wars Registry</H2White>
+        <H2White>Star Wars Registry</H2White>
       </Header>
       <Characters></Characters>
     </div>
